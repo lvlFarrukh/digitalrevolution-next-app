@@ -16,7 +16,6 @@ export default function Cover() {
       ? { width: "80%", height: "100vh" }
       : { width: "45%", height: "100vh" };
 
-      console.log(windowSize.current[0])
   return (
     <section className="cover-section">
       <video autoPlay muted loop>
@@ -39,7 +38,7 @@ export default function Cover() {
         </section>
 
         <section
-          class="responsive-nav-list"
+          className="responsive-nav-list"
           style={expendNav ? { display: "block" } : { display: "none" }}
         >
           <ul>
