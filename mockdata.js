@@ -124,3 +124,30 @@ export const mockDataServices = [
       ],
     },
   ];
+
+  export const mockDataourWork = [
+    {
+      id: 0,
+      titleImage:
+        "https://www.digitalgravity.ae/assets/images/home/our-work/our-work-1.webp",
+      logoImage: "https://www.digitalgravity.ae/assets/brand-logo.webp",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit natus nam doloremque facilis inventore rerum laudantium quae rem animi, delectus autem iure minus fugit, eos quo magnam consectetur sed veritatis!",
+    },
+    {
+      id: 0,
+      titleImage:
+        "https://www.digitalgravity.ae/assets/images/home/our-work/our-work-3.webp",
+      logoImage: "https://www.digitalgravity.ae/assets/brand-logo.webp",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit natus nam doloremque facilis inventore rerum laudantium quae rem animi, delectus autem iure minus fugit, eos quo magnam consectetur sed veritatis!",
+    },
+    {
+      id: 0,
+      titleImage:
+        "https://www.digitalgravity.ae/assets/images/home/our-work/our-work-4.webp",
+      logoImage: "https://www.digitalgravity.ae/assets/brand-logo.webp",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit natus nam doloremque facilis inventore rerum laudantium quae rem animi, delectus autem iure minus fugit, eos quo magnam consectetur sed veritatis!",
+    },
+  ];
