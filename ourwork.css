@@ -1,0 +1,6 @@
+.ourWork-section {
+  display: grid;
+  grid-template-rows: 70px 1fr 1fr;
+  height: 500px;
+  padding: 10px, 0px;
+}
