@@ -43,7 +43,7 @@
 
 #header-icon {
   background-color: gray;
-  height: 50px;
+  height: 70px !important;
   width: fit-content;
   padding: 10px;
 }
@@ -56,7 +56,7 @@
   justify-items: end;
 }
 
-#header-icon > img {
+#header-icon > Image {
   height: 100%;
 }
 
@@ -117,7 +117,7 @@
   margin-top: 50px;
 }
 
-.cover-item-icon-img {
+.cover-item-icon-Image {
   height: 35px;
   width: 35px;
   margin: 5px;

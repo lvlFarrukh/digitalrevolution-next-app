@@ -176,3 +176,46 @@ export const mockDataourWork = [
   },
 ];
 
+
+export const mockDataClient = [
+  {
+    id:0,
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+  },
+  {
+    id:0,
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+  },
+  {
+    id:0,
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+  },
+  {
+    id:0,
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+  },{
+    id:0,
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+  },{
+    id:0,
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+  },{
+    id:0,
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+  },{
+    id:0,
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+  },{
+    id:0,
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+  }
+]

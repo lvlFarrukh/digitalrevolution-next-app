@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.cover-section {
+  display: grid;
+  grid-template-rows: 70px 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+  padding: 10px, 0px;
+  background-image: url("../../../../public/assets/backgrounds/bg-1.jpg");
+}
+
+.cover-section video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.caption {
+  z-index: 1;
+}
+
+.cover-item {
+  background-color: aliceblue;
+}
+
+/* navbar start */
+
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* background-color: #1c1c1cd4; */
+  height: 70px;
+  align-items: center;
+}
+
+#header-icon {
+  background-color: gray;
+  height: 50px;
+  width: fit-content;
+  padding: 10px;
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  place-items: center;
+  justify-items: end;
+}
+
+#header-icon > Image {
+  height: 100%;
+}
+
+#nav-options {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto;
+  margin-left: 10%;
+}
+
+.navbar-list {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin: 15px;
+}
+
+.navbar-list:hover {
+  color: red;
+}
+
+.header-contact {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 70px;
+  align-items: center;
+}
+
+.speak-button {
+  display: grid;
+  font-size: 0.8em;
+  color: red;
+  height: 50px;
+  width: fit-content;
+  padding: 10px 30px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.speak-button:hover {
+  color: white;
+  background-color: red;
+}
+
+.color-red {
+  color: red;
+}
+
+/* navbar end*/
+
+/* cover-item-1 */
+
+.cover-item-1 {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.cover-item-icon-Image {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.cover-text-left {
+  font-size: 5em;
+  text-align: end;
+  margin-top: 10px;
+}
+
+.cover-item-2 {
+  padding: 0px 150px 50px;
+}
+
+.cover-item-2 > p {
+  width: 40%;
+  font-size: 1.2em;
+}
+
+/* Animate Talk Button */
+
+:root {
+  --white: #eee;
+  --black: #141414;
+  --color: red;
+  scroll-behavior: smooth;
+}
+
+.link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.link span,
+.link i {
+  position: relative;
+}
+.link i {
+  margin-left: 0.5em;
+}
+.link .color {
+  width: 2em;
+  height: 2em;
+  border-radius: 2em;
+  background-color: var(--color);
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: -0.65em;
+  animation-name: talk-animation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+.wrapper {
+  margin-top: 30px;
+}
+
+.text-gradient {
+  background: #df1313;
+  background: linear-gradient(
+    to top right,
+    #df1313 21%,
+    #757575 63%,
+    #f9f9f9 96%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-white {
+  color: white;
+}
+
+@keyframes talk-animation {
+  0% {
+    width: 2em;
+  }
+  50% {
+    width: 5.8em;
+  }
+  100% {
+    width: 2em;
+  }
+}
+
+/* .link:hover .color {
+  animation-name: talk-animation;
+  animation-duration: 1s;
+  width: 7em;
+} */
+
+/* .navbar-responsive-icon {
+  background-color: white;
+  font-size: 0.8em;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  top: -6px;
+  display: none;
+} */
+
+.responsive-nav {
+  display: none;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  padding: 20px
+}
+
+.responsive-nav:hover {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-responsive-icon {
+  width: fit-content;
+  position: absolute;
+  right: 15px;
+}
+
+.responsive-nav-list {
+  display: none;
+  /* padding: 20px; */
+  margin-top: 50px;
+}
+
+.responsive-nav-list > ul > li {
+  margin: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #757575;
+  cursor: pointer;
+}
+/* Responsive Css */
+@media screen and (max-width: 1024px) {
+
+  .cover-item-1 {
+    margin-top: 0px;
+  }
+
+  .navbar-list {
+    font-size: 0.7em;
+    margin: 10px;
+  }
+
+  .cover-text-left {
+    font-size: 3em;
+    text-align: end;
+  }
+
+  .cover-item-icon-Image {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .cover-item-2 {
+    padding: 0px 150px 50px;
+  }
+  
+  .cover-item-2 > p {
+    width: 70%;
+    font-size: 0.8em;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .cover-section {
+    height: 600px;
+  }
+
+  .responsive-nav {
+    display: block;
+  }
+
+  .cover-item-1 {
+    margin-top: 0px;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+
+  .cover-text-left {
+    font-size: 2em;
+    text-align: end;
+  }
+
+  .header-contact {
+    display: none
+  }
+
+  .cover-item-icon-Image {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .cover-item-2 {
+    padding: 0px 150px 50px;
+  }
+  
+  .cover-item-2 > p {
+    position: relative;
+    top: -50px;
+    width: 70%;
+    font-size: 0.8em;
+  }
+
+  .link {
+    font-size: 1rem;
+    position: relative;
+    top: -50px;
+  }
+
+}
+
+@media screen and (max-width: 426px) {
+
+  .responsive-nav {
+    display: block;
+  }
+
+  .cover-item-1 {
+    margin-top: 0px;
+    padding: 20px;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+
+  .cover-text-left {
+    font-size: 1.3em;
+    text-align: end;
+  }
+
+  .header-contact {
+    display: none
+  }
+
+  .cover-item-icon-Image {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+  }
+
+  .cover-item-2 {
+    padding: 0px 20px 40px 70px;
+  }
+  
+  .cover-item-2 > p {
+    position: relative;
+    top: -50px;
+    width: 70%;
+    font-size: 0.8em;
+  }
+
+  .link {
+    font-size: 1rem;
+    position: relative;
+    top: -50px;
+  }
+
+  .cover-section {
+    height: 80vh;
+  }
+
+}
