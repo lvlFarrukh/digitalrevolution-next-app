@@ -1,20 +1,18 @@
 "use client";
 
-import { useMemo, useState, useRef } from "react";
+import { useMemo, useState, useRef, useEffect } from "react";
 import "./cover.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 export default function Cover() {
-  const windowSize = useRef([window.innerWidth, window.innerHeight]);
-
+  const [expendNavbar, setexpendNavbar] = useState({ width: "80%", height: "100vh" })
   const [expendNav, setExpendNav] = useState(false);
 
-  const expendNavbar = 
-    windowSize.current[0] <= "428"
-      ? { width: "80%", height: "100vh" }
-      : { width: "45%", height: "100vh" };
+  useEffect(() => {
+    setexpendNavbar(window.innerWidth);
+  }, [])
 
   return (
     <section className="cover-section">

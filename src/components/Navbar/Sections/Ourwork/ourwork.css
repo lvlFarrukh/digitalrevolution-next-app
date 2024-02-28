@@ -1,8 +1,8 @@
 .work-section {
     display: grid;
     grid-template-rows: 200px 1fr;
-    height: 700px;
-    padding: 10px 0px 80px 0px;
+    height: 900px;
+    padding: 40px 0px 80px 0px;
     background-color: #363636;
     /* background-image: url("../../assets//backgrounds/bg-1.jpg"); */
   }
@@ -13,7 +13,7 @@
     -webkit-text-stroke-width: 0.7px;
     -webkit-text-stroke-color: #9f9fa0;
     margin-left: 10%;
-    margin-top: 50px;
+    margin-top: 70px;
   }
   
   .container {
@@ -107,4 +107,9 @@
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     position: relative !important;
     top: 250px !important;
+  }
+
+  .work-slider-container {
+    margin-top: 80px;
+    cursor: grab;
   }
