@@ -4,7 +4,6 @@ import { Fragment } from "react";
 import Carousel from "react-elastic-carousel";
 import "./SwiSwiperSlider.css";
 import { mockDataClient, mockDataourWork } from "../../../mockdata";
-import Image from "next/image";
 
 const WorkSliderbreakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -31,11 +30,11 @@ const ClientSliderbreakPoints = [
 const WorkSliderItem = ({ titleImage, logoImage, description }) => {
   return (
     <section className="ourWork-slider-item">
-      <section className="ourWork-slider-item-Image1">
-        <Image src={titleImage} />
+      <section className="ourWork-slider-item-img1">
+        <img src={titleImage} />
       </section>
-      <section className="ourWork-slider-item-Image2">
-        <Image src={logoImage} />
+      <section className="ourWork-slider-item-img2">
+        <img src={logoImage} />
       </section>
       <p>{description}</p>
     </section>
@@ -45,11 +44,11 @@ const WorkSliderItem = ({ titleImage, logoImage, description }) => {
 const ClientSliderItem = ({ Image1, Image2 }) => {
   return (
     <section className="client-slider-item">
-      <section className="client-slider-item-Image1">
-        <Image src={Image1} />
+      <section className="client-slider-item-img">
+        <img src={Image1} />
       </section>
-      <section className="client-slider-item-Image1">
-        <Image src={Image2} />
+      <section className="client-slider-item-img1">
+        <img src={Image2} />
       </section>
     </section>
   );

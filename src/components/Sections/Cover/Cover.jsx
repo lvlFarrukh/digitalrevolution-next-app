@@ -1,11 +1,10 @@
 "use client";
 
 import { useMemo, useState, useRef, useEffect } from "react";
-import "./cover.css";
+import "./cover.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import Image from "next/image";
 
 export default function Cover() {
   const [expendNavbar, setexpendNavbar] = useState({ width: "80%", height: "100vh" })
@@ -19,7 +18,7 @@ export default function Cover() {
     <section className="cover-section">
       <video autoPlay muted loop>
         <source
-          src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          // src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
           type="video/mp4"
         />
       </video>
@@ -53,7 +52,7 @@ export default function Cover() {
 
       <nav className="header caption">
         <section id="header-icon">
-          <Image src="https://www.digitalgravity.ae/assets/brand-logo.webp" />
+          <img src="https://www.digitalgravity.ae/assets/brand-logo.webp" Fz/>
         </section>
         <section className="header-nav">
           <ul id="nav-options">
@@ -93,10 +92,10 @@ export default function Cover() {
                             <h3>Speak to an Expert</h3>
                         </section> */}
             <section className="speak-button">
-              <Image src="https://www.digitalgravity.ae/assets/svg/social/whatsapp.svg" />
+              <img src="https://www.digitalgravity.ae/assets/svg/social/whatsapp.svg" />
             </section>
             <section className="speak-button">
-              <Image src="https://www.digitalgravity.ae/assets/svg/social/phone.svg" />
+              <img src="https://www.digitalgravity.ae/assets/svg/social/phone.svg" />
             </section>
           </section>
         </section>
@@ -106,32 +105,32 @@ export default function Cover() {
         <section>
           <ul>
             <li>
-              <Image
-                className="cover-item-icon-Image"
+              <img
+                className="cover-item-icon-img"
                 src="./assets/icons/social-media/facebook-hover.png"
               />
             </li>
             <li>
-              <Image
-                className="cover-item-icon-Image"
+              <img
+                className="cover-item-icon-img"
                 src="./assets/icons/social-media/facebook-hover.png"
               />
             </li>
             <li>
-              <Image
-                className="cover-item-icon-Image"
+              <img
+                className="cover-item-icon-img"
                 src="./assets/icons/social-media/facebook-hover.png"
               />
             </li>
             <li>
-              <Image
-                className="cover-item-icon-Image"
+              <img
+                className="cover-item-icon-img"
                 src="./assets/icons/social-media/facebook-hover.png"
               />
             </li>
             <li>
-              <Image
-                className="cover-item-icon-Image"
+              <img
+                className="cover-item-icon-img"
                 src="./assets/icons/social-media/facebook-hover.png"
               />
             </li>

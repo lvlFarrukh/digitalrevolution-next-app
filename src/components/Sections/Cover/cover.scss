@@ -1,30 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import '../../../app/globalscss.scss';
 
 .cover-section {
   display: grid;
   grid-template-rows: 70px 1fr 1fr;
-  height: 100vh;
-  width: 100%;
+  height: $section-height;
+  width: $section-width;
   padding: 10px, 0px;
   background-image: url("../../../../public/assets/backgrounds/bg-1.jpg");
+  background-color: $color1;
 }
 
 .cover-section video {
-  width: 100%;
-  height: 100%;
+  height: $section-height;
+  width: $section-width;
   position: absolute;
   object-fit: cover;
-  z-index: 0;
+  z-index: $zIndex-back;
 }
 
 /* Just styling the content of the div, the *magic* in the previous rules */
 .caption {
-  z-index: 1;
+  z-index: $zIndex-front;
 }
 
-.cover-item {
-  background-color: aliceblue;
-}
 
 /* navbar start */
 
@@ -32,46 +30,49 @@
   display: grid;
   grid-template-columns: auto auto;
   /* background-color: #1c1c1cd4; */
-  height: 70px;
+  height: $navbar_height;
   align-items: center;
 }
 
 #header-icon {
-  background-color: gray;
-  height: 50px;
+  background-color: $color1;
+  height: $navbar-height;
   width: fit-content;
   padding: 10px;
 }
 
 .header-nav {
-  display: grid;
-  grid-template-columns: auto auto;
+  // display: grid;
+  // grid-template-columns: auto auto;
   grid-template-rows: 1fr;
   place-items: center;
   justify-items: end;
+  height: $navbar-height;
+  justify-content: end;
 }
 
-#header-icon > Image {
+#header-icon > img {
   height: 100%;
 }
 
 #nav-options {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  // grid-template-columns: auto auto auto auto auto auto;
   grid-template-rows: auto;
-  margin-left: 10%;
+  margin-left: 0%;
 }
 
 .navbar-list {
-  font-size: 1.2em;
+  @include roboto-medium;
+  font-size: $font-small;
   text-transform: uppercase;
   font-weight: bold;
-  color: white;
-  margin: 15px;
+  color: $font-secondary-color;
+  margin: 15px 20px;
 }
 
 .navbar-list:hover {
-  color: red;
+  color: $font-primary-color;
 }
 
 .header-contact {
@@ -83,9 +84,8 @@
 
 .speak-button {
   display: grid;
-  font-size: 0.8em;
-  color: red;
-  height: 50px;
+  color: $primary-color;
+  height: $navbar-height;
   width: fit-content;
   padding: 10px 30px;
   align-items: center;
@@ -94,7 +94,7 @@
 
 .speak-button:hover {
   color: white;
-  background-color: red;
+  background-color: $primary-color;
 }
 
 .color-red {
@@ -108,11 +108,10 @@
 .cover-item-1 {
   display: grid;
   grid-template-columns: 30% 1fr;
-  padding: 50px;
-  margin-top: 50px;
+  padding: $section-padding;
 }
 
-.cover-item-icon-Image {
+.cover-item-icon-img {
   height: 40px;
   width: 40px;
   margin: 5px;
@@ -275,7 +274,7 @@
     text-align: end;
   }
 
-  .cover-item-icon-Image {
+  .cover-item-icon-img {
     height: 30px;
     width: 30px;
     margin: 5px;
@@ -322,7 +321,7 @@
     display: none
   }
 
-  .cover-item-icon-Image {
+  .cover-item-icon-img {
     height: 30px;
     width: 30px;
     margin: 5px;
@@ -371,7 +370,7 @@
     display: none
   }
 
-  .cover-item-icon-Image {
+  .cover-item-icon-img {
     height: 20px;
     width: 20px;
     margin: 5px;

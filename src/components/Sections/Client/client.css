@@ -85,17 +85,17 @@
       overflow: visible;
     }
     
-    .client-slider__listItem-Image1 {
+    .client-slider__listItem-img1 {
       height: 40%;
       width: 40%;
       filter: grayscale(100%);
     }
     
-    .client-slider__listItem-Image1:hover {
+    .client-slider__listItem-img1:hover {
       filter: grayscale(100%);
     } 
     
-    .client-slider__listItem-Image2 {
+    .client-slider__listItem-img2 {
       height: 50px;
       margin-top: 5px;
     }

@@ -3,7 +3,6 @@
 import React, { useState, useMemo } from "react";
 import "./services.css";
 import { mockDataServices } from "../../../../mockdata";
-import Image from "next/image";
 
 const SliderItem = ({ index, name, changeSlider }) => {
   return (
@@ -84,7 +83,7 @@ export default function Services() {
       </section>
 
       <section className="service-section-2">
-        <Image id="serviceImage" src={sliderLists[2]?.imageUrl} />
+        <img id="serviceimg" src={sliderLists[2]?.imageUrl} />
         <section className="slider-item-details">
           <section>
             <p id="servicesDescription">{sliderLists[2]?.description}</p>
