@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import "./services.css";
+import "./services.scss";
 import { mockDataServices } from "../../../../mockdata";
 
 const SliderItem = ({ index, name, changeSlider }) => {

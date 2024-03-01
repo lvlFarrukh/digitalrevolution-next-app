@@ -1,0 +1,219 @@
+@import "../../../app/globalscss.scss";
+
+.services-section {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  grid-template-rows: 1fr;
+  height: $section-height;
+  padding: $section-padding;
+  background-color: gray;
+  background-image: url("https://www.digitalgravity.ae/assets/images/home/services/digital-marketing-bg.webp");
+  // background-image: url("../../../../public/assets/backgrounds/bg-1.jpg");
+}
+
+.section-heading {
+  @include section-heading;
+  grid-column: 1 / 2;
+}
+
+.slider-list {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  margin-top: 10vh;
+  align-items: center;
+}
+
+.scroll-indicator {
+  width: fit-content;
+  text-align: center;
+}
+
+.scroll-indicator > section {
+  height: 50px;
+  width: 22px;
+  border-radius: 15px;
+  border: 2px solid $color3;
+  margin: 5px;
+}
+
+.scroll-indicator > h6 {
+  color: $color3;
+}
+
+.scroll-indicator > section > section {
+  background-color: white;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  margin: 10px auto;
+  animation-name: scroll-icon-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes scroll-icon-animation {
+  0% {
+    /* margin: 0px auto; */
+    opacity: 0;
+  }
+  25% {
+    /* margin: 0px auto; */
+    opacity: 0.5;
+  }
+  50% {
+    /* margin: 45px auto; */
+    opacity: 1;
+  }
+  75% {
+    /* margin: 45px auto; */
+    opacity: 0.5;
+  }
+  100% {
+    /* margin: 45px auto; */
+    opacity: 0;
+  }
+}
+
+#slider {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 10px;
+  padding: 10px 20px;
+  border-left: 1px solid white;
+  height: 250px;
+  overflow-y: hidden;
+  align-items: center;
+}
+
+#slider > h3 {
+  cursor: pointer;
+  width: fit-content;
+  color: #727d89;
+}
+
+#slider-item-2 {
+  @include roboto-bold;
+  font-size: $font-slider-selected-large !important;
+  color: $color3 !important;
+  margin: 5px 0px;
+}
+
+#slider-item-0,
+#slider-item-4 {
+  color: $color3 !important;
+  font-size: $font-slider-selected-small !important;
+  opacity: 0.2;
+}
+
+#slider-item-1,
+#slider-item-3 {
+  color: $color3 !important;
+  font-size: $font-slider-selected-medium !important;
+  opacity: 0.5;
+}
+
+#slider > h3:hover {
+  margin-left: 1px;
+}
+
+.service-section-2 {
+  margin-top: 8vh;
+}
+
+.service-section-2 > img {
+  width: 90%;
+}
+
+.slider-item-details {
+  width: 80%;
+  color: $color3;
+}
+
+.slider-items-features {
+  margin-top: 10px;
+}
+
+#services-name-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#services-name-list > li {
+  list-style-type: circle !important;
+  margin-left: 50px;
+}
+
+#servicesDescription {
+  font-size: $font-small;
+}
+
+
+@media screen and (max-width: 768px) {
+  #slider {
+    row-gap: 5px;
+    padding: 10px 20px;
+    border-left: 1px solid white;
+    height: 190px !important;
+    overflow-y: hidden;
+  }
+
+}
+
+@media screen and (max-width: 426px) {
+  .services-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: $section-height;
+    padding: $section-padding;
+    text-align: center;
+  }
+
+  .slider-list {
+    margin-top: 2vh;
+  }
+
+  .services-section {
+    height: 500px;
+  }
+
+  #slider {
+    row-gap: 5px;
+    padding: 10px 20px;
+    border-left: 1px solid white;
+    height: 100px !important;
+    overflow-y: hidden;
+  }
+
+  .service-section-2 > img {
+    width: 60%;
+  }
+
+  .service-section-2 {
+    margin-top: 0vh;
+  }
+
+  .slider-item-details {
+    width: 65%;
+    margin: 0px auto;
+}
+
+  #servicesDescription {
+    font-size: $font-small;
+    text-align: justify;
+  }
+
+  #slider > h3:hover {
+    margin-left: 0px;
+  }
+
+  .scroll-indicator > section {
+    height: 30px;
+    width: 15px;
+    border-radius: 15px;
+    border: 2px solid white;
+    margin: 5px;
+}
+
+}

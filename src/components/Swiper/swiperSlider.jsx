@@ -2,7 +2,7 @@
 
 import { Fragment } from "react";
 import Carousel from "react-elastic-carousel";
-import "./SwiSwiperSlider.css";
+import "./SwiperSlider.scss";
 import { mockDataClient, mockDataourWork } from "../../../mockdata";
 
 const WorkSliderbreakPoints = [
@@ -10,10 +10,7 @@ const WorkSliderbreakPoints = [
   { width: 220, itemsToShow: 1, itemsToScroll: 1 },
   { width: 440, itemsToShow: 2 },
   { width: 660, itemsToShow: 3 },
-  // { width: 880, itemsToShow: 4 },
-  // { width: 1000, itemsToShow: 5 },
-  // { width: 1220, itemsToShow: 6 },
-  // { width: 1440, itemsToShow: 7 },
+  { width: 880, itemsToShow: 4 },
 ];
 
 const ClientSliderbreakPoints = [

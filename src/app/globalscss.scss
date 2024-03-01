@@ -2,8 +2,9 @@
 
 $navbar-height: 70px;
 $section-height: 100vh;
+$section-height-mobile: 70vh;
 $section-width: 100%;
-$section-padding: 5%;
+$section-padding: 5vh 5%;
 
 $zIndex-front: 1;
 $zIndex-back: -1;
@@ -12,21 +13,43 @@ $primary-color: red;
 $secondary-color: white;
 $color1: gray;
 $color2: black;
+$color3: white;
+$logo-back-color: #0000009e;
 
+$font-large: 6vw;
+$font-medium: 3vw;
+$font-medium2: 2.5vw;
+$font-small: 1vw;
+$font-smallest: 0.8vw;
 
-$font-large: 5em;
-$font-medium: 3em;
-$font-small: 1em;
-$font-smallest: 0.8em;
+$font-slider-selected-large: 1.5vw;
+$font-slider-selected-medium: 1.2vw;
+$font-slider-selected-small: 0.8vw;
+
+$font-small-mobile: 2vw;
 
 $font-primary-color: red;
 $font-secondary-color: white;
 $font-color1: gray;
 $font-color2: black;
 
-@mixin icon-size {
+@mixin section-heading {
+    @include roboto-bold;
+    text-align: left;
+    font-size: $font-large;
+    color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: $font-secondary-color;
+}
+
+@mixin social-icon-size {
     height: 40px;
     width: 40px;
+}
+
+@mixin social-icon-size-mobile {
+    height: 25px;
+    width: 25px;
 }
 
 @mixin roboto-thin {

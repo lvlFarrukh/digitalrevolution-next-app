@@ -1,6 +1,6 @@
 import SwiSwiperSlider from "@/components/Swiper/SwiperSlider";
 import React, { Fragment } from "react";
-import "./ourwork.css";
+import "./ourwork.scss";
 import SwiperSlider from "@/components/Swiper/SwiperSlider";
 
 export default function Ourwork() {

@@ -1,0 +1,46 @@
+@import "../../../app/globalscss.scss";
+
+.work-section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: $section-height;
+    padding: $section-padding;
+    background-color: #363636;
+    /* background-image: url("../assets//backgrounds/bg-1.jpg"); */
+  }
+  
+  .work-heading {
+    @include section-heading;
+  }
+
+  .work-slider-container {
+    cursor: grab;
+  }
+  
+  .slider__listItem-img1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
+  
+  // .slider__listItem-img1:hover {
+  //   filter: grayscale(100%);
+  // } 
+  
+  // .slider__listItem-img2 {
+  //   height: 50px;
+  //   margin-top: 5px;
+  // }
+  
+  // .slider__listItem-description {
+  //   color: white;
+  //   font-size: 13px;
+  // }
+  
+  // .swiper-scrollbar.swiper-scrollbar-horizontal {
+  //   position: relative !important;
+  //   top: 250px !important;
+  // }
+
+ 

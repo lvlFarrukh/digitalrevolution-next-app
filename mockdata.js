@@ -1,7 +1,7 @@
 export const mockDataServices = [
   {
     id: 0,
-    name: "Service 1",
+    name: "Digital Branding And Communication",
     imageUrl:
       "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
     description:
@@ -19,7 +19,7 @@ export const mockDataServices = [
   },
   {
     id: 1,
-    name: "Service 2",
+    name: "Digital Marketing",
     imageUrl:
       "https://www.digitalgravity.ae/assets/images/home/services/digital-branding.webp",
     description:
@@ -37,7 +37,7 @@ export const mockDataServices = [
   },
   {
     id: 2,
-    name: "Service 3",
+    name: "Mobile App Development",
     imageUrl:
       "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
     description:
@@ -176,31 +176,26 @@ export const mockDataourWork = [
   },
 ];
 
-
 export const mockDataClient = [
+  
   {
     id:0,
-    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
-    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/3.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/4.svg",
   },
   {
     id:0,
-    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
-    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/5.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/6.svg",
   },
   {
     id:0,
-    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
-    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
-  },
-  {
-    id:0,
-    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
-    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/7.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/8.svg",
   },{
     id:0,
-    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
-    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",
+    image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/9.svg",
+    image2: "https://www.digitalgravity.ae/assets/images/home/collab-companies/10.svg",
   },{
     id:0,
     image1: "https://www.digitalgravity.ae/assets/images/home/collab-companies/1.svg",

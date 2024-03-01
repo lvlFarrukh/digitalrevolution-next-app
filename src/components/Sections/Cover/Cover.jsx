@@ -4,21 +4,25 @@ import { useMemo, useState, useRef, useEffect } from "react";
 import "./cover.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 export default function Cover() {
-  const [expendNavbar, setexpendNavbar] = useState({ width: "80%", height: "100vh" })
+  const [expendNavbar, setexpendNavbar] = useState({
+    width: "80%",
+    height: "100vh",
+  });
   const [expendNav, setExpendNav] = useState(false);
 
   useEffect(() => {
-    setexpendNavbar(window.innerWidth);
-  }, [])
+    if (Number(window.innerWidth) <= 425) {
+      setexpendNavbar({ width: "100%", height: "100vh" });
+    }
+  }, []);
 
   return (
     <section className="cover-section">
       <video autoPlay muted loop>
         <source
-          // src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
           type="video/mp4"
         />
       </video>
@@ -52,7 +56,7 @@ export default function Cover() {
 
       <nav className="header caption">
         <section id="header-icon">
-          <img src="https://www.digitalgravity.ae/assets/brand-logo.webp" Fz/>
+          <img src="https://www.digitalgravity.ae/assets/brand-logo.webp" Fz />
         </section>
         <section className="header-nav">
           <ul id="nav-options">
@@ -101,62 +105,68 @@ export default function Cover() {
         </section>
       </nav>
 
-      <section className="cover-item-1 caption">
-        <section>
-          <ul>
-            <li>
-              <img
-                className="cover-item-icon-img"
-                src="./assets/icons/social-media/facebook-hover.png"
-              />
-            </li>
-            <li>
-              <img
-                className="cover-item-icon-img"
-                src="./assets/icons/social-media/facebook-hover.png"
-              />
-            </li>
-            <li>
-              <img
-                className="cover-item-icon-img"
-                src="./assets/icons/social-media/facebook-hover.png"
-              />
-            </li>
-            <li>
-              <img
-                className="cover-item-icon-img"
-                src="./assets/icons/social-media/facebook-hover.png"
-              />
-            </li>
-            <li>
-              <img
-                className="cover-item-icon-img"
-                src="./assets/icons/social-media/facebook-hover.png"
-              />
-            </li>
-          </ul>
-        </section>
+      <section className="cover-section-content-container">
+        <section className="cover-item-1 caption">
+          <section>
+            <ul>
+              <li>
+                <img
+                  className="cover-item-icon-img"
+                  src="./assets/icons/social-media/facebook-hover.png"
+                />
+              </li>
+              <li>
+                <img
+                  className="cover-item-icon-img"
+                  src="./assets/icons/social-media/facebook-hover.png"
+                />
+              </li>
+              <li>
+                <img
+                  className="cover-item-icon-img"
+                  src="./assets/icons/social-media/facebook-hover.png"
+                />
+              </li>
+              <li>
+                <img
+                  className="cover-item-icon-img"
+                  src="./assets/icons/social-media/facebook-hover.png"
+                />
+              </li>
+              <li>
+                <img
+                  className="cover-item-icon-img"
+                  src="./assets/icons/social-media/facebook-hover.png"
+                />
+              </li>
+            </ul>
+          </section>
 
-        <section className="cover-text-left">
-          <h1 className="text-gradient">CONNECTING BRANDS</h1>
-          <h1 className="text-white">WITH GLOBAL</h1>
-          <h1 className="text-white">AUDIENCES</h1>
-        </section>
-      </section>
+          <section className="cover-text-left">
+            <h1 className="text-white">
+              <span className="text-gradient">CONNECTING BRANDS</span>
+              <br />
+              WITH GLOBAL
+              <br />
+              AUDIENCES
+            </h1>
+          </section>
 
-      <section className="cover-item-2 caption">
-        <p className="text-white">
-          You have an idea, we have the talent and resources to turn it into a
-          reality. Digital Gravity is a globally recognized digital agency
-          elevating brands through ground-breaking user experience and
-          disruptive digital products.
-        </p>
+          <section className="cover-item-2 caption">
+            <p className="text-white">
+              You have an idea, we have the talent and resources to turn it into
+              a reality. Digital Gravity is a globally recognized digital agency
+              elevating brands through ground-breaking user experience and
+              disruptive digital products.
+            </p>
 
-        <section className="wrapper">
-          <a className="link" href="#" target="_blank">
-            <section className="color"></section>
-            <span>Let&aposs Talk</span>
-          </a>
+            <section className="wrapper">
+              <a className="link" href="#" target="_blank">
+                <section className="color"></section>
+                <span>Let's Talk</span>
+              </a>
+            </section>
+          </section>
         </section>
       </section>
     </section>
