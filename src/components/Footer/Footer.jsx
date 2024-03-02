@@ -12,7 +12,7 @@ export default function Footer() {
           Your Brand world wide
         </h3>
 
-        <h6>Reach out to our team and we'll get back to you within a day.</h6>
+        <h6>Reach out to our team and we&apos;ll get back to you within a day.</h6>
         <h6 className="footer-address">Office M-13, The Curve Building, Sheikh Zayed Road, Dubai, UAE</h6>
         <h6 className="footer-address">digitalrevolution@gmail.com</h6>
         <h6 className="footer-address">+92365741589</h6>

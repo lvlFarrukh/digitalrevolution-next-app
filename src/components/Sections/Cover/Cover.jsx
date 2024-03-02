@@ -181,7 +181,7 @@ export default function Cover() {
             <section className="wrapper">
               <a className="link" href="#" target="_blank">
                 <section className="color"></section>
-                <span>Let's Talk</span>
+                <span>Let&apos;s Talk</span>
               </a>
             </section>
           </section>
