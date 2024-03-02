@@ -4,7 +4,7 @@ import SwiperSlider from "@/components/Swiper/SwiperSlider";
 
 export default function Clients() {
   return (
-    <section class="ourclient-section">
+    <section class="ourclient-section" id="Clients">
       <section class="ourClient-section-heading">
         <h3>We are ready to uplift your <br/>
         <span class="red-color-font">brand like many others in</span><br/>

@@ -1,0 +1,43 @@
+@import "../../../app/globalscss.scss";
+
+.channel-section {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    height: $section-height;
+    width: $section-width;
+    padding: $section-padding;
+    // background-color: $color1;
+}
+
+.channel-section-heading {
+    @include section-heading;
+    -webkit-text-stroke-color: $font-color1;
+    -webkit-text-stroke-width: 1px;
+}
+
+.channels-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30vh 30vh;
+    row-gap: 2px;
+    column-gap: 2px;
+    text-align: center;
+}
+
+.channels-list > section {
+    background-color: $color1;
+    cursor: pointer;
+}
+
+.channels-list > section > img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 426px) {
+    .channels-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20vh 20vh 20vh 20vh;
+    }
+}

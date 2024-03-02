@@ -4,8 +4,18 @@ import { useMemo, useState, useRef, useEffect } from "react";
 import "./cover.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import {
+  Facebook,
+  Instagram,
+  LinkedIn,
+  Phone,
+  Twitter,
+  WhatsApp,
+} from "@mui/icons-material";
 
 export default function Cover() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const [expendNavbar, setexpendNavbar] = useState({
     width: "80%",
     height: "100vh",
@@ -16,10 +26,18 @@ export default function Cover() {
     if (Number(window.innerWidth) <= 425) {
       setexpendNavbar({ width: "100%", height: "100vh" });
     }
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 1); // Adjust threshold as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <section className="cover-section">
+    <section className="cover-section" id="Home">
       <video autoPlay muted loop>
         <source
           src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -54,40 +72,45 @@ export default function Cover() {
         </section>
       </section>
 
-      <nav className="header caption">
+      <nav className={`navbar ${isScrolled ? 'header caption sticky' : 'header caption'}`}>
         <section id="header-icon">
           <img src="https://www.digitalgravity.ae/assets/brand-logo.webp" Fz />
         </section>
         <section className="header-nav">
           <ul id="nav-options">
             <li>
-              <a className="navbar-list color-red" href="#home">
+              <a className="navbar-list color-red" href="#Home">
                 HOME
               </a>
             </li>
-            <li>
+            {/* <li>
               <a className="navbar-list" href="#about">
                 About
               </a>
-            </li>
+            </li> */}
             <li>
-              <a className="navbar-list" href="#blog">
+              <a className="navbar-list" href="#Services">
                 Services
               </a>
             </li>
             <li>
-              <a className="navbar-list" href="#blog">
-                Case Studies
+              <a className="navbar-list" href="#Portfolio">
+                Portfolio
               </a>
             </li>
             <li>
-              <a className="navbar-list" href="#blog">
-                Careers
+              <a className="navbar-list" href="#Clients">
+                Clients
               </a>
             </li>
             <li>
-              <a className="navbar-list" href="#blog">
-                Blog
+              <a className="navbar-list" href="#Faq">
+                Faq
+              </a>
+            </li>
+            <li>
+              <a className="navbar-list" href="#Channel">
+                channels
               </a>
             </li>
           </ul>
@@ -95,11 +118,13 @@ export default function Cover() {
             {/* <section className="speak-button">
                             <h3>Speak to an Expert</h3>
                         </section> */}
-            <section className="speak-button">
-              <img src="https://www.digitalgravity.ae/assets/svg/social/whatsapp.svg" />
+            <section class="speak-button">
+              <a href="#">
+                <WhatsApp fontSize="large" />
+              </a>
             </section>
             <section className="speak-button">
-              <img src="https://www.digitalgravity.ae/assets/svg/social/phone.svg" />
+              <Phone fontSize="large" />
             </section>
           </section>
         </section>
@@ -109,35 +134,28 @@ export default function Cover() {
         <section className="cover-item-1 caption">
           <section>
             <ul>
-              <li>
-                <img
-                  className="cover-item-icon-img"
-                  src="./assets/icons/social-media/facebook-hover.png"
-                />
+              <li class="cover-social-links">
+                <a href="#">
+                  <Facebook />
+                </a>
               </li>
-              <li>
-                <img
-                  className="cover-item-icon-img"
-                  src="./assets/icons/social-media/facebook-hover.png"
-                />
+
+              <li class="cover-social-links">
+                <a href="#">
+                  <Instagram />
+                </a>
               </li>
-              <li>
-                <img
-                  className="cover-item-icon-img"
-                  src="./assets/icons/social-media/facebook-hover.png"
-                />
+
+              <li class="cover-social-links">
+                <a href="#">
+                  <LinkedIn />
+                </a>
               </li>
-              <li>
-                <img
-                  className="cover-item-icon-img"
-                  src="./assets/icons/social-media/facebook-hover.png"
-                />
-              </li>
-              <li>
-                <img
-                  className="cover-item-icon-img"
-                  src="./assets/icons/social-media/facebook-hover.png"
-                />
+
+              <li class="cover-social-links">
+                <a href="#">
+                  <Twitter />
+                </a>
               </li>
             </ul>
           </section>

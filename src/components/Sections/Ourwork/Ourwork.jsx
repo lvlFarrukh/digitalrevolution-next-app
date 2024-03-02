@@ -6,7 +6,7 @@ import SwiperSlider from "@/components/Swiper/SwiperSlider";
 export default function Ourwork() {
   return (
     <Fragment>
-      <section className="work-section">
+      <section className="work-section" id="Portfolio">
         <h1 className="work-heading">Our Work</h1>
 
         <section className="work-slider-container">

@@ -51,7 +51,7 @@ export default function Services() {
   useMemo(() => initiateSlider(), []);
 
   return (
-    <section className="services-section">
+    <section className="services-section" id="Services">
       <section className="service-section-item-1">
         <h1 className="section-heading">Services</h1>
 

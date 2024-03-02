@@ -90,6 +90,7 @@
   cursor: pointer;
   width: fit-content;
   color: #727d89;
+  transition: all 0.5s ease;
 }
 
 #slider-item-2 {
@@ -114,7 +115,7 @@
 }
 
 #slider > h3:hover {
-  margin-left: 1px;
+  margin-left: 5px;
 }
 
 .service-section-2 {

@@ -1,0 +1,71 @@
+@import "../../../app/globalscss.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply w-full h-full sm:w-[calc(50%-18px)] lg:w-[calc(33%-21px)] flex items-center flex-col gap-[15px];
+}
+
+.icon {
+    @apply w-11 h-11 lg:w-12 lg:h-12 bg-gray-600 rounded-full flex items-center justify-center border-[6px] border-gray-700 border-solid;
+}
+
+.svg {
+    @apply w-5 h-5 lg:w-6 lg:h-6;
+}
+
+.title {
+    @apply text-lg md:text-xl text-center;
+}
+
+.description {
+    @apply text-gray-200 text-center;
+}
+
+.section-faqs {
+    display: grid;
+    height: cal($section-height + 40vh);
+    width: $section-width;
+    padding: $section-padding;
+    // background-image: url("../../../../public/assets/backgrounds/bg-1.jpg");
+    background-color: $color1;
+}
+
+.section-heading-faqs {
+    @include section-heading;
+}
+
+.container-section-faqs {
+    padding: 0px !important;
+}
+
+.title {
+    @include roboto-bold;
+    color: $font-secondary-color;
+}
+
+.description {
+    @include roboto-regular;
+    color: $font-secondary-color;
+    opacity: 0.8;
+}
+
+.card {
+    padding: 15px !important;
+    background-color: #5c5c5c6e !important;
+    height: 230px !important;
+    border-radius: 10px !important;
+}
+
+.text-2xl {
+    @include roboto-regular;
+    color: $font-secondary-color;
+}
+
+.text-2xl > p {
+    @include roboto-regular;
+    color: $font-secondary-color;
+    opacity: 0.8;
+}
