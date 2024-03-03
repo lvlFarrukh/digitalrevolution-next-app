@@ -39,10 +39,7 @@ export default function Cover() {
   return (
     <section className="cover-section" id="Home">
       <video autoPlay muted loop>
-        <source
-          src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-          type="video/mp4"
-        />
+        <source src={"./assets/videos/company_video.webm"} type="video/mp4" />
       </video>
 
       <section className="responsive-nav" style={expendNav ? expendNavbar : {}}>
@@ -72,9 +69,13 @@ export default function Cover() {
         </section>
       </section>
 
-      <nav className={`navbar ${isScrolled ? 'header caption sticky' : 'header caption'}`}>
+      <nav
+        className={`navbar ${
+          isScrolled ? "header caption sticky" : "header caption"
+        }`}
+      >
         <section id="header-icon">
-          <img src="https://www.digitalgravity.ae/assets/brand-logo.webp" Fz />
+          <img src={"./assets/logo.png"} />
         </section>
         <section className="header-nav">
           <ul id="nav-options">
@@ -114,10 +115,7 @@ export default function Cover() {
               </a>
             </li>
           </ul>
-          <section className="header-contact">
-            {/* <section className="speak-button">
-                            <h3>Speak to an Expert</h3>
-                        </section> */}
+          {/* <section className="header-contact">
             <section class="speak-button">
               <a href="#">
                 <WhatsApp fontSize="large" />
@@ -126,13 +124,23 @@ export default function Cover() {
             <section className="speak-button">
               <Phone fontSize="large" />
             </section>
-          </section>
+          </section> */}
         </section>
       </nav>
 
       <section className="cover-section-content-container">
         <section className="cover-item-1 caption">
-          <section>
+          <section className="cover-text-left">
+            <h1 className="text-white">
+              <span className="text-gradient">CONNECTING BRANDS</span>
+              <br />
+              WITH GLOBAL
+              <br />
+              AUDIENCES
+            </h1>
+          </section>
+
+          <section className="cover-social-icons">
             <ul>
               <li class="cover-social-links">
                 <a href="#">
@@ -158,16 +166,6 @@ export default function Cover() {
                 </a>
               </li>
             </ul>
-          </section>
-
-          <section className="cover-text-left">
-            <h1 className="text-white">
-              <span className="text-gradient">CONNECTING BRANDS</span>
-              <br />
-              WITH GLOBAL
-              <br />
-              AUDIENCES
-            </h1>
           </section>
 
           <section className="cover-item-2 caption">
