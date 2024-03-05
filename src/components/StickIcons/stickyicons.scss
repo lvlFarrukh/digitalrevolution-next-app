@@ -1,20 +1,24 @@
+@import "../../app/globalscss.scss";
+
 .Stick-icons {
     position: absolute;
-    top: 40%;
+    top: 60%;
+    z-index: 2 !important;
 }
 
 .Stick-icons > section {
-    height: 40px;
-    width: 50px;
+    width: 45px;
     margin-top: 10px;
-    background-color: white;
+    background-color: $font-primary-color;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     cursor: pointer;
     transition: all 0.5s ease;
-    z-index: 3 !important;
+    color: $font-secondary-color;
+    text-align: end;
+    padding: 5px;
 }
 
 .Stick-icons > section:hover {
-    width: 70px;
+    width: 60px;
 }

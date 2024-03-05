@@ -1,7 +1,7 @@
 export const mockDataServices = [
   {
     id: 0,
-    name: "Digital Branding And Communication",
+    name: "SEO",
     imageUrl:
       "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
     description:
@@ -19,7 +19,7 @@ export const mockDataServices = [
   },
   {
     id: 1,
-    name: "Digital Marketing",
+    name: "Franchise SEO",
     imageUrl:
       "https://www.digitalgravity.ae/assets/images/home/services/digital-branding.webp",
     description:
@@ -37,7 +37,7 @@ export const mockDataServices = [
   },
   {
     id: 2,
-    name: "Mobile App Development",
+    name: "Local SEO",
     imageUrl:
       "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
     description:
@@ -48,7 +48,7 @@ export const mockDataServices = [
   },
   {
     id: 3,
-    name: "Service 4",
+    name: "National SEO",
     imageUrl:
       "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
     description:
@@ -65,7 +65,7 @@ export const mockDataServices = [
   },
   {
     id: 4,
-    name: "Service 5",
+    name: "Content Writing",
     imageUrl:
       "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
     description:
@@ -84,8 +84,8 @@ export const mockDataServices = [
     ],
   },
   {
-    id: 0,
-    name: "Service 6",
+    id: 5,
+    name: "Graphic Designing",
     imageUrl:
       "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
     description:
@@ -104,8 +104,68 @@ export const mockDataServices = [
     ],
   },
   {
-    id: 0,
-    name: "Service 7",
+    id: 6,
+    name: "Website Development",
+    imageUrl:
+      "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, ea ad quo, veritatis natus reiciendis, rerum aut vitae libero tenetur non autem corrupti provident! Ducimus delectus iure adipisci tempora quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam non architecto odit doloribus eligendi illo provident voluptatem natus accusantium ab, fugit atque itaque necessitatibus tenetur quasi nesciunt eos maiores labore.",
+    servicesCategoryText:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    servicesCategory: [
+      "Service 1",
+      "Service 2",
+      "Service 3",
+      "Service 4",
+      "Service 5",
+      "Service 6",
+      "Service 7",
+      "Service 8",
+    ],
+  },
+  {
+    id: 7,
+    name: "Facebook Ads",
+    imageUrl:
+      "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, ea ad quo, veritatis natus reiciendis, rerum aut vitae libero tenetur non autem corrupti provident! Ducimus delectus iure adipisci tempora quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam non architecto odit doloribus eligendi illo provident voluptatem natus accusantium ab, fugit atque itaque necessitatibus tenetur quasi nesciunt eos maiores labore.",
+    servicesCategoryText:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    servicesCategory: [
+      "Service 1",
+      "Service 2",
+      "Service 3",
+      "Service 4",
+      "Service 5",
+      "Service 6",
+      "Service 7",
+      "Service 8",
+    ],
+  },
+  {
+    id: 8,
+    name: "Google Ads",
+    imageUrl:
+      "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, ea ad quo, veritatis natus reiciendis, rerum aut vitae libero tenetur non autem corrupti provident! Ducimus delectus iure adipisci tempora quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam non architecto odit doloribus eligendi illo provident voluptatem natus accusantium ab, fugit atque itaque necessitatibus tenetur quasi nesciunt eos maiores labore.",
+    servicesCategoryText:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    servicesCategory: [
+      "Service 1",
+      "Service 2",
+      "Service 3",
+      "Service 4",
+      "Service 5",
+      "Service 6",
+      "Service 7",
+      "Service 8",
+    ],
+  },
+  {
+    id: 9,
+    name: "Social Media Marketing",
     imageUrl:
       "https://www.digitalgravity.ae/assets/images/home/services/mobile-application.webp",
     description:

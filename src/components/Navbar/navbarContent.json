@@ -1,0 +1,46 @@
+{
+    "menus": [
+        {
+            "id": 0,
+            "title": "Home",
+            "pageUrl": "/",
+            "isEnable": true
+        },
+        {
+            "id": 1,
+            "title": "About",
+            "pageUrl": "/about",
+            "isEnable": true
+        },
+        {
+            "id": 2,
+            "title": "Services",
+            "pageUrl": "/services",
+            "isEnable": true
+        },   
+        {
+            "id": 3,
+            "title": "Portfolio",
+            "pageUrl": "/portfolio",
+            "isEnable": true
+        },
+        {
+            "id": 4,
+            "title": "Clients",
+            "pageUrl": "/clients",
+            "isEnable": true
+        },
+        {
+            "id": 5,
+            "title": "Case Studies",
+            "pageUrl": "/case-studies",
+            "isEnable": true
+        },   
+        {
+            "id": 6,
+            "title": "Blog",
+            "pageUrl": "/blog",
+            "isEnable": true
+        } 
+    ]
+}

@@ -19,68 +19,6 @@
 }
 
 /* Just styling the content of the div, the *magic* in the previous rules */
-.caption {
-  z-index: $zIndex-front;
-}
-
-/* navbar start */
-
-.header {
-  display: grid;
-  grid-template-columns: auto auto;
-  height: $navbar_height;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6196078431);
-}
-
-#header-icon {
-  // background-color: $logo-back-color;
-  height: $navbar-height;
-  width: fit-content;
-  padding: 10px;
-  // border-bottom-right-radius: 25px;
-}
-
-.header-nav {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 1fr;
-  place-items: center;
-  justify-items: end;
-  height: $navbar-height;
-  justify-content: end;
-}
-
-#header-icon > img {
-  height: 100%;
-}
-
-#nav-options {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: auto;
-  margin-left: 0%;
-}
-
-.navbar-list {
-  @include roboto-medium;
-  font-size: $font-small;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: $font-secondary-color;
-  margin: 15px 20px;
-}
-
-.navbar-list:hover {
-  color: $font-primary-color;
-}
-
-.header-contact {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  height: $navbar-height;
-  align-items: center;
-}
 
 .speak-button {
   display: grid;
@@ -235,41 +173,6 @@
   display: none;
 } */
 
-.responsive-nav {
-  display: none;
-  position: absolute;
-  right: 0px;
-  z-index: 2;
-  width: $navbar-height;
-  height: $navbar-height;
-  background-color: $color3;
-  padding: 20px;
-}
-
-.responsive-nav:hover {
-  width: $navbar-height;
-  height: $navbar-height;
-}
-
-.navbar-responsive-icon {
-  width: fit-content;
-  position: absolute;
-  right: 15px;
-}
-
-.responsive-nav-list {
-  display: none;
-  /* padding: 20px; */
-  margin-top: 50px;
-}
-
-.responsive-nav-list > ul > li {
-  margin: 20px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #757575;
-  cursor: pointer;
-}
-
 .cover-social-links a {
   color: #fff;
   background-color: rgb(0, 0, 0);
@@ -286,14 +189,6 @@
 .cover-social-links a:hover {
   color: #151515;
   background-color: #fff;
-}
-
-.sticky {
-  position: fixed !important;
-  top: 0 !important;
-  width: 100% !important;
-  z-index: 2 !important;
-  background-color: rgba(0, 0, 0, 0.6196078431);
 }
 
 /* Responsive Css */

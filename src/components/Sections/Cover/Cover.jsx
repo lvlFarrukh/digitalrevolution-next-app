@@ -13,6 +13,7 @@ import {
   WhatsApp,
 } from "@mui/icons-material";
 
+
 export default function Cover() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -38,6 +39,7 @@ export default function Cover() {
 
   return (
     <section className="cover-section" id="Home">
+      
       <video autoPlay muted loop>
         <source src={"./assets/videos/company_video.webm"} type="video/mp4" />
       </video>

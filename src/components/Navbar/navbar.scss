@@ -1,0 +1,150 @@
+@import "../../app/globalscss.scss";
+
+.caption {
+  z-index: $zIndex-front;
+}
+
+/* navbar start */
+.header {
+  display: grid;
+  grid-template-columns: 30% auto;
+  height: $navbar_height;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  position: absolute;
+  top: 0px;
+}
+
+#header-icon {
+  background-color: $font-secondary-color;
+  height: $navbar-height;
+  width: fit-content;
+  // border-bottom-right-radius: 25px;
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  place-items: center;
+  justify-items: end;
+  height: $navbar-height;
+  justify-content: end;
+}
+
+#header-icon > img {
+  height: 85%;
+  padding: 5px;
+}
+
+#nav-options {
+  display: flex;
+  // grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto;
+  margin-left: 0%;
+}
+
+.navbar-list {
+  @include roboto-medium;
+  font-size: $font-small;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $font-secondary-color;
+  margin: 15px 20px;
+  transition: all 0.8s ease;
+}
+
+.navbar-list:hover {
+  color: $font-primary-color;
+}
+
+.header-contact {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: $navbar-height;
+  align-items: center;
+}
+
+.responsive-nav {
+  display: none;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  width: $navbar-height;
+  height: $navbar-height;
+  background-color: $color3;
+}
+
+.responsive-nav:hover {
+  width: $navbar-height;
+  height: $navbar-height;
+  padding: 0px;
+}
+
+.navbar-responsive-icon {
+  width: fit-content;
+  position: absolute;
+  right: 15px;
+  top: 18px
+}
+
+.responsive-nav-list {
+  display: none;
+  margin-top: 50px;
+}
+
+.responsive-nav-list > ul > li {
+  margin: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #757575;
+  cursor: pointer;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 2 !important;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+}
+
+.color-red {
+  color: $font-primary-color
+}
+
+/* Responsive Css */
+@media screen and (max-width: 1024px) {
+  .navbar-list {
+    font-size: $font-small;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-nav {
+    display: block;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+
+  .header-contact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .responsive-nav {
+    display: block;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+
+  .header-contact {
+    display: none;
+  }
+}
